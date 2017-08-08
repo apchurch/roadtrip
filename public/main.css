@@ -1,0 +1,29 @@
+h1 {
+	font-size: 150px;
+	text-align: center;
+}
+h2 {
+	text-align: center;
+}
+img {
+	height: 200px;
+	width: 500px;
+	position: relative;
+	margin-left: 400px;
+}
+/*.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid blue;
+    padding: 10px;
+}*/
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
+    border: 3px solid black;
+    padding: 10px;
+}
+button {
+	float: right;
+}
