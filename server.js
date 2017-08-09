@@ -5,14 +5,9 @@ var app = express()
 app.get('/', function(request, response){
 	response.sendFile('./index.html', {root: './public/html'})
 })
-// app.get('/main.css', function(request, response){
-// 	response.sendFile('./main.css', {root: './public'})
-// })
+
 app.use(express.static('public'))
 
-// app.get('/main.js', function(request, response){
-// 	response.sendFile('./main.js', {root: './public'})
-// })
 app.get('/newyork', function(request, response){
 	response.sendFile('./newyork.html', {root: './public/html'})
 })
@@ -28,8 +23,5 @@ app.get('/neworleans', function(request, response){
 app.get('/boulder', function(request, response){
 	response.sendFile('./boulder.html', {root: './public/html'})
 })
-
-// app.use(express.static())
-
 
 app.listen(8000)
